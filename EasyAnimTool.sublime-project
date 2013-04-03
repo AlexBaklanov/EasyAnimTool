@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*sublime*",
+				"*README*",
+				".gitignore"
+			],
+			"folder_exclude_patterns":
+			[
+				"main.build",
+				"main.data",
+				"main.modules",
+				"scetches"
+			],
+			"path": "/Projects/EasyAnimTool"
+		}
+	]
+}

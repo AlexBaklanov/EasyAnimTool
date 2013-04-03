@@ -1,0 +1,2064 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"prin",
+				"PrintResult"
+			],
+			[
+				"save",
+				"saveBtn"
+			],
+			[
+				"sav",
+				"saveBtn"
+			],
+			[
+				"cur",
+				"curPartFrame"
+			],
+			[
+				"parts",
+				"partSclY"
+			],
+			[
+				"partScl",
+				"partSclX"
+			],
+			[
+				"next",
+				"nextKey"
+			],
+			[
+				"prev",
+				"prevKey"
+			],
+			[
+				"curpar",
+				"curPartFrame"
+			],
+			[
+				"part",
+				"partScl"
+			],
+			[
+				"scale",
+				"scaleMode"
+			],
+			[
+				"pivo",
+				"pivotX"
+			],
+			[
+				"partr",
+				"partRotAddX"
+			],
+			[
+				"pivot",
+				"pivotEditMode"
+			],
+			[
+				"ro",
+				"rotateMode"
+			],
+			[
+				"move",
+				"moveMode"
+			],
+			[
+				"selec",
+				"selectMode"
+			],
+			[
+				"touch",
+				"touchStartX"
+			],
+			[
+				"image",
+				"imageNumber"
+			],
+			[
+				"anima",
+				"animationImg"
+			],
+			[
+				"anim",
+				"animateBtn"
+			],
+			[
+				"cane",
+				"canEdit2"
+			],
+			[
+				"Ed",
+				"End"
+			],
+			[
+				"edit",
+				"editX"
+			],
+			[
+				"edi",
+				"editY"
+			],
+			[
+				"Cre",
+				"rectCurrentNumber"
+			],
+			[
+				"bgr",
+				"bgrImg"
+			],
+			[
+				"Draw",
+				"DrawImage"
+			],
+			[
+				"scl",
+				"sclY"
+			],
+			[
+				"global",
+				"globalSpeedAcceleration"
+			],
+			[
+				"di",
+				"globalDistance"
+			],
+			[
+				"GameO",
+				"GameOverMode"
+			],
+			[
+				"game",
+				"mainGame"
+			],
+			[
+				"Speed",
+				"SpeedHandle"
+			],
+			[
+				"glob",
+				"globalSpeed"
+			],
+			[
+				"bottomS",
+				"bottomStateToCreate"
+			],
+			[
+				"bottom",
+				"bottomCurrentState"
+			],
+			[
+				"botto",
+				"bottomCurrentState"
+			],
+			[
+				"bottoms",
+				"bottomStateToCreate"
+			],
+			[
+				"bott",
+				"bottomCurrentState"
+			],
+			[
+				"boto",
+				"bottomNewX"
+			],
+			[
+				"bottomNew",
+				"bottomNewX"
+			],
+			[
+				"bot",
+				"bottomNewX"
+			],
+			[
+				"Bott",
+				"bottomNext"
+			],
+			[
+				"heroS",
+				"heroStateLeaves"
+			],
+			[
+				"heroState",
+				"heroStateGround"
+			],
+			[
+				"bottomSt",
+				"bottomStateLeaves"
+			],
+			[
+				"jumpFo",
+				"jumpForceValue"
+			],
+			[
+				"swipe",
+				"swipeUp"
+			],
+			[
+				"swipel",
+				"swipeLength"
+			],
+			[
+				"hero",
+				"heroY"
+			],
+			[
+				"streamBubblec",
+				"streamBubbleCellDrawn"
+			],
+			[
+				"steam",
+				"streamBubble"
+			],
+			[
+				"Stream",
+				"StreamsInit"
+			],
+			[
+				"streamBu",
+				"streamBubbleCounter"
+			],
+			[
+				"streambubb",
+				"streamBubbleCount"
+			],
+			[
+				"Streambubb",
+				"streamBubbleReady"
+			],
+			[
+				"streambub",
+				"streamBubbleReady"
+			],
+			[
+				"size",
+				"sizeIncrease"
+			],
+			[
+				"str",
+				"streamBubble"
+			],
+			[
+				"new",
+				"newStreamBubble"
+			],
+			[
+				"streambu",
+				"streamBubbleCounter"
+			],
+			[
+				"stre",
+				"streamBubbleCounter"
+			],
+			[
+				"stream",
+				"streamBubblesClass"
+			],
+			[
+				"the",
+				"theSize"
+			],
+			[
+				"Stre",
+				"StreamActivate"
+			],
+			[
+				"acti",
+				"isStreamActive"
+			],
+			[
+				"stea",
+				"streamEnd"
+			],
+			[
+				"StreamBubbles",
+				"StreamBubblesUpdate"
+			],
+			[
+				"stra",
+				"streamStart"
+			],
+			[
+				"ste",
+				"isSteamActive"
+			],
+			[
+				"current",
+				"currentCounter"
+			],
+			[
+				"value",
+				"valuesCounter"
+			],
+			[
+				"Weapon",
+				"WeaponLoad"
+			],
+			[
+				"yello",
+				"yelloZero"
+			],
+			[
+				"yelo",
+				"yellowTo"
+			],
+			[
+				"yell",
+				"yellowFrom"
+			],
+			[
+				"dist",
+				"distanceGUILast"
+			],
+			[
+				"distan",
+				"distanceGUILast"
+			],
+			[
+				"up",
+				"upperBoundary"
+			],
+			[
+				"crabpre",
+				"crabPreviousY"
+			],
+			[
+				"craba",
+				"crabAnimX"
+			],
+			[
+				"Dista",
+				"DistanceDidNotBecomeBetter"
+			],
+			[
+				"las",
+				"distanceLast"
+			],
+			[
+				"crab",
+				"crabPreviousImg"
+			],
+			[
+				"CrabPre",
+				"CrabPreviousDeinit"
+			],
+			[
+				"crabanim",
+				"CrabAnimationDeinit"
+			],
+			[
+				"craban",
+				"crabAnimAcceleration"
+			],
+			[
+				"crabA",
+				"crabAnimSpd"
+			],
+			[
+				"crabAn",
+				"crabAnimSpd"
+			],
+			[
+				"GameOv",
+				"GameOverDeinit"
+			],
+			[
+				"Game",
+				"GameOverMode"
+			],
+			[
+				"finishy",
+				"finishYend"
+			],
+			[
+				"finish",
+				"finishYend"
+			],
+			[
+				"retin",
+				"Retina"
+			],
+			[
+				"bu",
+				"bubbleImg"
+			],
+			[
+				"runo",
+				"RunOutHandle"
+			],
+			[
+				"Init",
+				"InitANDROID"
+			],
+			[
+				"bgrX",
+				"bgrXzero"
+			],
+			[
+				"tou",
+				"TouchY"
+			],
+			[
+				"Touch",
+				"TouchX"
+			],
+			[
+				"forsin",
+				"forSinusSpeed"
+			],
+			[
+				"Current",
+				"CurrentLevel"
+			],
+			[
+				"shopi",
+				"shopItemsCount"
+			],
+			[
+				"Curr",
+				"CurrentUpgrade"
+			],
+			[
+				"lev1_1",
+				"lev1_1Bundle"
+			],
+			[
+				"Level",
+				"CurrentLevel"
+			],
+			[
+				"collec",
+				"collectorY"
+			],
+			[
+				"coll",
+				"collectorX"
+			],
+			[
+				"friend",
+				"friendY"
+			],
+			[
+				"yM",
+				"yMove"
+			],
+			[
+				"spe",
+				"speed*globalSpeed"
+			],
+			[
+				"Width",
+				"Width"
+			],
+			[
+				"star",
+				"startFriendAnim"
+			],
+			[
+				"frame",
+				"friendFramesCount"
+			],
+			[
+				"curFr",
+				"curFriendAnimSpd"
+			],
+			[
+				"start",
+				"startFriendAnim"
+			],
+			[
+				"distanc",
+				"distanceLast"
+			],
+			[
+				"Curre",
+				"CurrentLevel"
+			],
+			[
+				"alph",
+				"alphSpd"
+			],
+			[
+				"CreateB",
+				"CreateBonus"
+			],
+			[
+				"Retinas",
+				"retinaScl"
+			],
+			[
+				"retinaS",
+				"retinaScl"
+			],
+			[
+				"Drawt",
+				"DrawText"
+			],
+			[
+				"Curren",
+				"CurrentCnt"
+			],
+			[
+				"Int",
+				"Int"
+			],
+			[
+				"retinas",
+				"retinaScl"
+			],
+			[
+				"enemy",
+				"enemyDamage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ini.monkey",
+			"settings":
+			{
+				"buffer_size": 1565,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imgE.monkey",
+			"settings":
+			{
+				"buffer_size": 2705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "shp.monkey",
+			"settings":
+			{
+				"buffer_size": 217,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "frm.monkey",
+			"settings":
+			{
+				"buffer_size": 2758,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pwr.monkey",
+			"settings":
+			{
+				"buffer_size": 10905,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "enm.monkey",
+			"settings":
+			{
+				"buffer_size": 6145,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gui.monkey",
+			"settings":
+			{
+				"buffer_size": 8699,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "col.monkey",
+			"settings":
+			{
+				"buffer_size": 9275,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "obs.monkey",
+			"settings":
+			{
+				"buffer_size": 1363,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "frd.monkey",
+			"settings":
+			{
+				"buffer_size": 4788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sav.monkey",
+			"settings":
+			{
+				"buffer_size": 2657,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "go.monkey",
+			"settings":
+			{
+				"buffer_size": 1312,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "atlG.monkey",
+			"settings":
+			{
+				"buffer_size": 1798,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Seahorse.sublime-project",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Dino.sublime-project",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/alexbacklanov/Documents/Silhouette.svg",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "enm1.monkey",
+			"settings":
+			{
+				"buffer_size": 16059,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wpn.monkey",
+			"settings":
+			{
+				"buffer_size": 28359,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "com.monkey",
+			"settings":
+			{
+				"buffer_size": 1231,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "animE.monkey",
+			"settings":
+			{
+				"buffer_size": 5233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "txt.monkey",
+			"settings":
+			{
+				"buffer_size": 265,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "hro.monkey",
+			"settings":
+			{
+				"buffer_size": 2335,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "anm.monkey",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "anim.monkey",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.monkey",
+			"settings":
+			{
+				"buffer_size": 868,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "EasyAnimTool.sublime-project",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "glb.monkey",
+			"settings":
+			{
+				"buffer_size": 12046,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "imp.monkey",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "strm.monkey",
+			"settings":
+			{
+				"buffer_size": 6879,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "itm.monkey",
+			"settings":
+			{
+				"buffer_size": 3325,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gmc.monkey",
+			"settings":
+			{
+				"buffer_size": 912,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "btm.monkey",
+			"settings":
+			{
+				"buffer_size": 1848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rect.monkey",
+			"settings":
+			{
+				"buffer_size": 3416,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/monkey.sublime/Monkey - html5.sublime-build",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"Snippet: function",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: class	",
+				"Snippet: Class"
+			],
+			[
+				"Snippet: if",
+				"Snippet: If...End"
+			],
+			[
+				"",
+				"Set Syntax: Monkey"
+			],
+			[
+				"if",
+				"Snippet: If...Else...EndIf"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Projects/EasyAnimTool/main.build/html5/MonkeyGame.html",
+		"/Projects/InBody/main.data/GameTexts.txt",
+		"/Projects/InBody/Seahorse.sublime-project",
+		"/Users/alexbacklanov/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/alexbacklanov/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/alexbacklanov/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Projects/MonkeyPath.py",
+		"/D/InBody_GFX/ToDo.txt",
+		"/Projects/InBody/ToDo.monkey",
+		"/D/InBody/wpn.monkey",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/InBody/ToDo.monkey",
+		"/D/InBody/Seahorse.sublime-project",
+		"/D/InBody/gam.monkey",
+		"/D/InBody/bon.monkey",
+		"/D/InBody/shp.monkey",
+		"/D/InBody/hro.monkey",
+		"/D/InBody/com.monkey",
+		"/D/InBody/ToDo.txt",
+		"/D/InBody/glb.monkey",
+		"/D/InBody/gui.monkey",
+		"/D/InBody/go.monkey",
+		"/D/InBody/frd.monkey",
+		"/D/InBody/enm.monkey",
+		"/D/InBody/enm1.monkey",
+		"/D/InBody/obs.monkey",
+		"/D/InBody/itm.monkey",
+		"/D/InBody/pwr.monkey",
+		"/D/InBody/sav.monkey",
+		"/D/InBody/lvl.monkey",
+		"/D/InBody/mnu.monkey",
+		"/D/InBody/enm2.monkey",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/monkey/Monkey.tmLanguage",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/User/Monkey.sublime-settings",
+		"/D/InBody/main.build/html5/MonkeyGame.html",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files (x86)/Android/android-sdk/tools/ant/build.xml",
+		"/D/InBody/main.build/android/build.xml",
+		"/D/MonkeyPro49/targets/android/project.properties",
+		"/D/Virtual/Share/MonkeyPro56b/targets/android/project.properties",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/monkey/Snippets/IfEnd.tmSnippet",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/monkey/Snippets/If.tmSnippet",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/User/if end.sublime-snippet",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/monkey/Snippets/If___Else___Endif.tmSnippet",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/InBody/imp.monkey",
+		"/C/Users/Unite!/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text 2/Pristine Packages/OCaml.sublime-package",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/InBody/main.build/html51/main.js",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/User/Monkey.sublime-settings",
+		"/D/Virtual/Share/GW_mine/GW_Mine/mis.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/main.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/mnu.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/obs.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/loa.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/gam.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/bon.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/gui.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/imp.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/go.monkey",
+		"/D/Virtual/Share/GW_mine/GW_Mine/glb.monkey",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/Color Scheme - Default/Monkey.tmTheme",
+		"/C/Program Files/Sublime Text 2 Build 2181 x64/Data/Packages/User/Distraction Free.sublime-settings",
+		"/D/Virtual/Share/GW_mine/GW_Mine/sublime/jetworm.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Projects/EasyAnimTool",
+			"/Projects/InBody",
+			"D:\\InBody",
+			"D:\\Virtual\\Share\\GW_mine\\GW_Mine"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"addParam",
+			"curPart",
+			"1.0",
+			"keyFrame",
+			"pt",
+			"curPartFrame",
+			"l)",
+			"]]",
+			")",
+			"] = False",
+			" = False",
+			"curPartFrame",
+			"ptfr",
+			"partSclX",
+			"partX",
+			"_fr",
+			"fr",
+			"Fr",
+			"fr",
+			"(fr",
+			"fr",
+			"pivotX",
+			"partX",
+			"curPart",
+			"partX",
+			"curPart",
+			"X",
+			"fr",
+			"curFrame",
+			"curPart + prevKey * 10",
+			"curPart",
+			"part.",
+			"atF",
+			"part.x",
+			"frame",
+			"at",
+			"curPart",
+			"[10]",
+			"X",
+			"Rot",
+			"X",
+			"atlas",
+			"theNum",
+			"imageNumber",
+			"img",
+			"[10]",
+			"128",
+			"X",
+			"Y",
+			"X",
+			"currentPart",
+			"animationImg",
+			"y + h",
+			"x + w",
+			"TouchX",
+			"x",
+			"X",
+			"editRadius/2",
+			"editH",
+			"editW",
+			"editY",
+			"editX",
+			"edit",
+			"rectangle.",
+			"editX",
+			"TouchX",
+			"enemy",
+			"en",
+			"enemies",
+			"obstacleY",
+			"obstacleX",
+			"GameOverMode",
+			"Obstacle",
+			"bot",
+			"bottom",
+			"Bottom",
+			"bottom",
+			"Bottom",
+			"bottom",
+			"Bottom",
+			"bottom",
+			"Bottom",
+			"bot",
+			"obstacleLength",
+			"bottom",
+			"Bottom",
+			"bottom",
+			"SpeedHandle",
+			"HandleStates",
+			"current",
+			"bottomCurrentState",
+			"bottomState",
+			"Type",
+			"alive",
+			"swipeUp",
+			"100",
+			"String",
+			"bgrActualImg",
+			"StreamBubblesUpdate",
+			"streamBubbleCellErased",
+			"streamBubbleCellErase",
+			"steam",
+			"SteamBubblesCellDraw",
+			"SteamBubblesCellErase",
+			"4",
+			"3",
+			"()\n",
+			"LoadState",
+			"StreamActivate",
+			"disableJump",
+			"StreamBubblesInit",
+			"isSteamActive",
+			"Steams",
+			"Line",
+			"line",
+			"Line",
+			"line",
+			"columnVariable",
+			"levelClass",
+			"levels",
+			"lineVariable",
+			"ar",
+			" ar",
+			"Ar",
+			"ar",
+			"vars",
+			"theLine",
+			"$"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"retinaScl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 20,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ini.monkey",
+					"settings":
+					{
+						"buffer_size": 1565,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "imgE.monkey",
+					"settings":
+					{
+						"buffer_size": 2705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "shp.monkey",
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "frm.monkey",
+					"settings":
+					{
+						"buffer_size": 2758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								225,
+								225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pwr.monkey",
+					"settings":
+					{
+						"buffer_size": 10905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "enm.monkey",
+					"settings":
+					{
+						"buffer_size": 6145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "gui.monkey",
+					"settings":
+					{
+						"buffer_size": 8699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3706,
+								3706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "col.monkey",
+					"settings":
+					{
+						"buffer_size": 9275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								908,
+								908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "obs.monkey",
+					"settings":
+					{
+						"buffer_size": 1363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1176,
+								1176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "frd.monkey",
+					"settings":
+					{
+						"buffer_size": 4788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 977.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "sav.monkey",
+					"settings":
+					{
+						"buffer_size": 2657,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "go.monkey",
+					"settings":
+					{
+						"buffer_size": 1312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "atlG.monkey",
+					"settings":
+					{
+						"buffer_size": 1798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1779,
+								1779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 734.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Seahorse.sublime-project",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Dino.sublime-project",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/Users/alexbacklanov/Documents/Silhouette.svg",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "enm1.monkey",
+					"settings":
+					{
+						"buffer_size": 16059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "wpn.monkey",
+					"settings":
+					{
+						"buffer_size": 28359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1047,
+								1118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 202.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "com.monkey",
+					"settings":
+					{
+						"buffer_size": 1231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								568,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "animE.monkey",
+					"settings":
+					{
+						"buffer_size": 5233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5092,
+								5092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3949.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "txt.monkey",
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "hro.monkey",
+					"settings":
+					{
+						"buffer_size": 2335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								643,
+								643
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 250.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "anm.monkey",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "anim.monkey",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "main.monkey",
+					"settings":
+					{
+						"buffer_size": 868,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "EasyAnimTool.sublime-project",
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "glb.monkey",
+					"settings":
+					{
+						"buffer_size": 12046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								974,
+								991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "imp.monkey",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "strm.monkey",
+					"settings":
+					{
+						"buffer_size": 6879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3524.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "itm.monkey",
+					"settings":
+					{
+						"buffer_size": 3325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "gmc.monkey",
+					"settings":
+					{
+						"buffer_size": 912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								432,
+								432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "btm.monkey",
+					"settings":
+					{
+						"buffer_size": 1848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1731,
+								1731
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "rect.monkey",
+					"settings":
+					{
+						"buffer_size": 3416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3205,
+								3205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/monkey.sublime/Monkey.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"imp",
+				"imp.monkey"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 124.0,
+	"status_bar_visible": true
+}
