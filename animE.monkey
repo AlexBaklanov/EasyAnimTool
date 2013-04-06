@@ -79,6 +79,11 @@ Class animationEditClass
 
 		If bgr DrawImage(bgr1Img, 0, 0) Else DrawImage(bgr2Img, 0, 0)
 
+		If moveMode DrawText("move", 0, 300)
+		If rotateMode DrawText("rotate", 0, 300)
+		If scaleMode DrawText("scale", 0, 300)
+		If scaleMode2 DrawText("scale fixed", 0, 300)
+
 		For Local at:Int = 0 Until part.cnt
 
 			Local atF:Int = at + curFrame * 10
@@ -86,7 +91,14 @@ Class animationEditClass
 			'If partSclX[atF] = 0.0 partSclX[atF] = 1.0
 			'If partSclY[atF] = 0.0 partSclY[atF] = 1.0
 
-			part.Draw(at, partX[atF], partY[atF], partRot[atF], partSclX[atF], partSclY[atF])
+			Local prev10:Int = at + prevKey * 10
+			Local next10:Int = at + nextKey * 10
+			Local third10:Int = at + thirdKey * 10
+
+			Local bzX:Float = partX[atF]'Interpolate( partX[prev10], partX[next10], partX[third10], partX[atF] )
+			Local bzY:Float = partY[atF]'Interpolate( partY[prev10], partY[next10], partY[third10], partY[atF] )
+
+			part.Draw(at, bzX, bzY, partRot[atF], partSclX[atF], partSclY[atF])
 
 			If at = curPart
 
@@ -166,6 +178,11 @@ Function ChooseMode:Void()
 		scaleMode = True
 	End
 
+	If KeyHit(KEY_J)
+		ResetOtherModes()
+		scaleMode2 = True
+	End
+
 End
 
 Function ResetOtherModes:Void()
@@ -174,6 +191,7 @@ Function ResetOtherModes:Void()
 	pivotEditMode = False
 	rotateMode = False
 	scaleMode = False
+	scaleMode2 = False
 
 End
 
@@ -281,7 +299,7 @@ Function RotateHandle:Void()
 
 End
 
-Global scaleMode:Bool
+Global scaleMode:Bool, scaleMode2:Bool
 Global partSclLastX:Float[10000], partSclLastY:Float[10000]
 
 Function ScaleHandle:Void()
@@ -290,6 +308,13 @@ Function ScaleHandle:Void()
 
 		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
 		partSclY[curPartFrame] = Float(TouchY() - touchStartY + partSclLastY[curPartFrame]) / 100.0
+
+	End
+
+	If scaleMode2 And pivotEditMode = False And keyFrame[curFrame] And TouchDown(0)
+
+		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
+		partSclY[curPartFrame] = partSclX[curPartFrame]
 
 	End
 
@@ -304,19 +329,20 @@ End
 
 Function PrintResult:Void()
 
-	For Local fr:Int = 0 To 940
+	For Local fr:Int = 0 Until 940
 
 		For Local cp:Int = 0 Until part.cnt
 
-			Local v1:Int = partX[cp + fr * 10] - centerPoint
-			Local v2:Int = partY[cp + fr * 10] - centerPoint
-			Local v3:Int = partRot[cp + fr * 10]
-			Local v4:Int = Int( partSclX[cp + fr * 10] * 100 )
-			Local v5:Int = Int( partSclY[cp + fr * 10] * 100 )
+			Local p:Int = cp
+			Local x:Int = partX[cp + fr * 10] - centerPoint
+			Local y:Int = partY[cp + fr * 10] - centerPoint
+			Local r:Int = partRot[cp + fr * 10]
+			Local sx:Int = Int( partSclX[cp + fr * 10] * 100 )
+			Local sy:Int = Int( partSclY[cp + fr * 10] * 100 )
 
 			If keyFrame[fr]
 
-				Print fr + ":" + v1 +  "," + v2 +  "," + v3 +  "," + v4 +  "," + v5
+				Print "p" + p + ",f" + fr + ",x" + x +  ",y" + y +  ",r" + r +  ",s" + sx +  ",z" + sy
 
 			End
 
