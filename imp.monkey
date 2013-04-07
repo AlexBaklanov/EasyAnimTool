@@ -16,8 +16,6 @@ Import ini
 Import animE
 Import imgE
 Import hro
-Import enm
-Import enm1
 Import lvl
 Import wpn
 Import sav
@@ -27,11 +25,9 @@ Import gui
 Import twn
 Import obs
 Import go
-Import frd
 Import pwr
 Import rect
 Import txt
 Import strm
 Import atl
 Import gmc
-Import btm
