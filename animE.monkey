@@ -11,7 +11,7 @@ Global saveBtn := New Buttons
 Global playBtn := New Buttons
 
 Global partX:Float[10000], partY:Float[10000]
-Global partRot:Int[10000], partSclX:Float[10000], partSclY:Float[10000]
+Global partRot:Float[10000], partSclX:Float[10000], partSclY:Float[10000]
 
 Global centerPoint:Int = 300
 
@@ -40,6 +40,11 @@ Class animationEditClass
 		If KeyHit(KEY_B) bgr = Not bgr
 
 		If KeyHit(KEY_0) ResetGame()
+
+		If KeyHit(KEY_TAB) 
+			curPart += 1
+			If curPart >= part.cnt curPart = 0
+		End
 
 		curPartFrame = curPart + curFrame * 10
 
@@ -88,15 +93,8 @@ Class animationEditClass
 
 			Local atF:Int = at + curFrame * 10
 
-			'If partSclX[atF] = 0.0 partSclX[atF] = 1.0
-			'If partSclY[atF] = 0.0 partSclY[atF] = 1.0
-
-			Local prev10:Int = at + prevKey * 10
-			Local next10:Int = at + nextKey * 10
-			Local third10:Int = at + thirdKey * 10
-
-			Local bzX:Float = partX[atF]'Interpolate( partX[prev10], partX[next10], partX[third10], partX[atF] )
-			Local bzY:Float = partY[atF]'Interpolate( partY[prev10], partY[next10], partY[third10], partY[atF] )
+			Local bzX:Float = partX[atF]
+			Local bzY:Float = partY[atF]
 
 			part.Draw(at, bzX, bzY, partRot[atF], partSclX[atF], partSclY[atF])
 
@@ -115,7 +113,7 @@ Class animationEditClass
 
 			End
 
-			If keyFrame[curFrame] And playMode = False
+			If (keyFrameMove[curFrame] Or keyFrameRot[curFrame] Or keyFrameScl[curFrame]) And playMode = False
 
 				SetAlpha(.3)
 
@@ -265,10 +263,19 @@ Global moveMode:Bool
 
 Function MoveHandle:Void()
 
-	If moveMode And pivotEditMode = False And keyFrame[curFrame] And TouchDown(0)
+	If moveMode And pivotEditMode = False And keyFrameMove[curFrame] And TouchDown(0)
 
 		partX[curPartFrame] = TouchX() - touchStartX + partXlast[curPartFrame]
 		partY[curPartFrame] = TouchY() - touchStartY + partYlast[curPartFrame]
+
+		If curPart = 0
+			For Local at:Int = 1 Until part.cnt
+
+				partX[at + curFrame * 10] = TouchX() - touchStartX + partXlast[at + curFrame * 10]
+				partY[at + curFrame * 10] = TouchY() - touchStartY + partYlast[at + curFrame * 10]
+
+			End
+		End
 
 	End
 
@@ -285,7 +292,7 @@ Global partRotAddX:Int[10000], partRotAddY:Int[10000]
 
 Function RotateHandle:Void()
 
-	If rotateMode And pivotEditMode = False And keyFrame[curFrame] And TouchDown(0)
+	If rotateMode And pivotEditMode = False And keyFrameRot[curFrame] And TouchDown(0)
 
 		partRot[curPartFrame] = TouchX() - touchStartX + partRotLast[curPartFrame]
 
@@ -304,14 +311,14 @@ Global partSclLastX:Float[10000], partSclLastY:Float[10000]
 
 Function ScaleHandle:Void()
 
-	If scaleMode And pivotEditMode = False And keyFrame[curFrame] And TouchDown(0)
+	If scaleMode And pivotEditMode = False And keyFrameScl[curFrame] And TouchDown(0)
 
 		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
 		partSclY[curPartFrame] = Float(TouchY() - touchStartY + partSclLastY[curPartFrame]) / 100.0
 
 	End
 
-	If scaleMode2 And pivotEditMode = False And keyFrame[curFrame] And TouchDown(0)
+	If scaleMode2 And pivotEditMode = False And keyFrameScl[curFrame] And TouchDown(0)
 
 		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
 		partSclY[curPartFrame] = partSclX[curPartFrame]
@@ -340,9 +347,11 @@ Function PrintResult:Void()
 			Local sx:Int = Int( partSclX[cp + fr * 10] * 100 )
 			Local sy:Int = Int( partSclY[cp + fr * 10] * 100 )
 
-			If keyFrame[fr]
+			If keyFrameMove[fr] Or keyFrameRot[fr] Or keyFrameScl[fr]
 
-				Print "p" + p + ",f" + fr + ",x" + x +  ",y" + y +  ",r" + r +  ",s" + sx +  ",z" + sy
+				Local ft:Int = Int(keyFrameMove[fr]) + Int(keyFrameRot[fr]) * 2 + Int(keyFrameScl[fr]) * 4
+
+				Print "p" + p + ",f" + fr + ",m" + ft + ",x" + x/2 +  ",y" + y/2 +  ",r" + r +  ",s" + sx +  ",z" + sy
 
 			End
 

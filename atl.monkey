@@ -18,7 +18,7 @@ Class atlasClass
 
 		'correct path'
 		Local correctPath:Int = 4
-		Local retinaValue:Int = 1
+		Local retinaValue:Int = 2
 
 		If path.Contains("@p")
 			retinaValue = 2

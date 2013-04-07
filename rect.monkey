@@ -4,7 +4,7 @@ Import imp
 
 Function rectanglesHandle:Void()
 
-	If rectCurrentNumber < 4 And createRectBtn.Pressed()
+	If rectCurrentNumber < 10 And createRectBtn.Pressed()
 
 		CreateRect(rectCurrentNumber)
 		rectCurrentNumber += 1
@@ -18,7 +18,7 @@ Function rectanglesHandle:Void()
 			Local pX:Int = rct.pivotX - rct.x
 			Local pY:Int = rct.pivotY - rct.y
 
-			Print "x" + rct.x + "," + "y" + rct.y + "," + "w" + (rct.x + rct.w) + "," + "h" + (rct.y + rct.h) + "," + "i" + pX + "," + "j" + pY
+			Print "x" + rct.x/2 + "," + "y" + rct.y/2 + "," + "w" + (rct.x + rct.w)/2 + "," + "h" + (rct.y + rct.h)/2 + "," + "i" + pX/2 + "," + "j" + pY/2
 
 		End
 
@@ -160,6 +160,30 @@ Class rectangleClass
 			Case 3
 
 				SetColor(0,255,0)
+
+			Case 4
+
+				SetColor(255,255,0)
+
+			Case 5
+
+				SetColor(0,255,255)
+
+			Case 6
+
+				SetColor(255,0,255)
+
+			Case 7
+
+				SetColor(0,0,255)
+
+			Case 8
+
+				SetColor(255,255,255)
+
+			Case 9
+
+				SetColor(128,255,0)
 
 		End
 

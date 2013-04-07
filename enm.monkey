@@ -49,7 +49,7 @@ Class enemiesClass
 					Case 1, 8, 9, 11, 14, 16, 19, 22, 24, 27, 28, 30
 						img[enm] = LoadImage("enemies/enemy"+zeroAdd+""+enm+""+loadadd + ".png", 3, Image.MidHandle)
 
-					Case 2, 6, 7, 15, 23, 21
+					Case 6, 7, 15, 23, 21
 						img[enm] = LoadImage("enemies/enemy"+zeroAdd+""+enm+""+loadadd + ".png", 4, Image.MidHandle)
 
 					Case 3, 10, 12, 26
@@ -63,6 +63,7 @@ Class enemiesClass
 					
 					Default
 						img[enm] = LoadImage("enemies/enemy"+zeroAdd+""+enm+""+loadadd + ".png", 1, Image.MidHandle)
+
 
 
 				End

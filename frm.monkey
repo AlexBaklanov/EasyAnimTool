@@ -2,14 +2,20 @@ Strict
 
 Import imp
 
-Global keyFrame:Bool[1000]
+Global keyFrameMove:Bool[1000]
+Global keyFrameRot:Bool[1000]
+Global keyFrameScl:Bool[1000]
 
 Global curFrame:Int
 
 Function InitFrame:Void()
 
-	keyFrame[0] = True
-	keyFrame[940] = True
+	keyFrameMove[0] = True
+	keyFrameMove[940] = True
+	keyFrameRot[0] = True
+	keyFrameRot[940] = True
+	keyFrameScl[0] = True
+	keyFrameScl[940] = True
 
 End
 
@@ -35,9 +41,22 @@ Function DrawFrame:Void()
 
 	For Local fr:Int = 0 To 940
 
-		If keyFrame[fr] = True
+		If keyFrameMove[fr]
 
+			SetColor(255,0,0)
+			DrawCircle( fr + 10, 625, 5 )
+
+		End
+		If keyFrameRot[fr]
+
+			SetColor(0,255,0)
 			DrawCircle( fr + 10, 630, 5 )
+
+		End
+		If keyFrameScl[fr]
+
+			SetColor(0,0,255)
+			DrawCircle( fr + 10, 635, 5 )
 
 		End
 
@@ -79,15 +98,21 @@ Function UpdateFrame:Void()
 		If curFrame < 0 curFrame = 0
 		If curFrame > 940 curFrame = 940
 
-		nextKey = NextKey()
-		prevKey = PrevKey()
-		thirdKey = ThirdKey()
+		nextKeyM = NextKey(kfMOVE)
+		nextKeyR = NextKey(kfROT)
+		nextKeyS = NextKey(kfSCL)
+
+		prevKeyM = PrevKey(kfMOVE)
+		prevKeyR = PrevKey(kfROT)
+		prevKeyS = PrevKey(kfSCL)
 
 	End
 
-	If KeyHit(KEY_F)
+	If KeyDown(KEY_CONTROL)
 
-		keyFrame[curFrame] = Not keyFrame[curFrame]
+		If KeyHit(KEY_T) keyFrameMove[curFrame] = Not keyFrameMove[curFrame]
+		If KeyHit(KEY_Y) keyFrameRot[curFrame] = Not keyFrameRot[curFrame]
+		If KeyHit(KEY_H) keyFrameScl[curFrame] = Not keyFrameScl[curFrame]
 
 		RememberLast()
 
@@ -96,6 +121,7 @@ Function UpdateFrame:Void()
 	If playBtn.Pressed()
 
 		playMode = Not playMode
+		If playMode curFrame = 0
 
 	End
 
@@ -108,87 +134,89 @@ Function UpdateFrame:Void()
 
 End
 
-Global thirdKey:Int, nextKey:Int, prevKey:Int
+Global nextKeyM:Int, nextKeyR:Int, nextKeyS:Int, prevKeyM:Int, prevKeyR:Int, prevKeyS:Int
 
 Function CalculateInterpolation:Void()
 
 	For Local pt:Int = 0 Until part.cnt
 
-		For Local fr:Int = prevKey To nextKey
+		For Local fr:Int = prevKeyM To nextKeyM
 
-			If keyFrame[fr] = False
-
-				Local prev10:Int = pt + prevKey * 10
-				Local next10:Int = pt + nextKey * 10
-				Local third10:Int = pt + thirdKey * 10
-				Local cur10:Int = pt + curFrame * 10
+			If keyFrameMove[fr] = False
 
 				Local ptfr:Int = pt + fr * 10
 
-				'Local duration:Float = Float(nextKey - prevKey)
-				Local curFrm:Float = Float(fr - prevKey)
+				Local prev10:Int = pt + prevKeyM * 10
+				Local next10:Int = pt + nextKeyM * 10
+				Local curFrm:Float = Float(fr - prevKeyM)
 
-				partX[ptfr] = 		Tween( partX[prev10], partX[next10], curFrm, prevKey, nextKey )
-				partY[ptfr] = 		Tween( partY[prev10], partY[next10], curFrm, prevKey, nextKey )
-
-				partRot[ptfr] = 	Tween( partRot[prev10], partRot[next10], curFrm, prevKey, nextKey )
-
-				partSclX[ptfr] = 	Tween( partSclX[prev10], partSclX[next10], curFrm, prevKey, nextKey )
-				partSclY[ptfr] = 	Tween( partSclY[prev10], partSclY[next10], curFrm, prevKey, nextKey )
-
-				#rem
-				partX[ptfr] = 		Interpolate( partX[prev10], partX[next10], partX[third10], partX[ptfr] )
-				partY[ptfr] = 		Interpolate( partY[prev10], partY[next10], partY[third10], partY[ptfr] )
-
-				partRot[ptfr] = 	Interpolate( partRot[prev10], partRot[next10], partRot[third10], partRot[ptfr] )
-
-				partSclX[ptfr] = 	Interpolate( partSclX[prev10], partSclX[next10], partSclX[third10], partSclX[ptfr] )
-				partSclY[ptfr] = 	Interpolate( partSclY[prev10], partSclY[next10], partSclY[third10], partSclY[ptfr] )
-				#end
-
-			ElseIf fr = 940
-
-				partX[pt + fr * 10] = partX[pt + prevKey * 10]
-				partY[pt + fr * 10] = partY[pt + prevKey * 10]
-
-				partRot[pt + fr * 10] = partRot[pt + prevKey * 10]
-
-				partSclX[pt + fr * 10] = partSclX[pt + prevKey * 10]
-				partSclY[pt + fr * 10] = partSclY[pt + prevKey * 10]
+				partX[ptfr] = 		Tween( partX[prev10], 		partX[next10], 		curFrm, prevKeyM, nextKeyM )
+				partY[ptfr] = 		Tween( partY[prev10], 		partY[next10], 		curFrm, prevKeyM, nextKeyM )
 
 			End
 
-		End
+		Next
+
+		For Local fr:Int = prevKeyR To nextKeyR
+
+			If keyFrameRot[fr] = False
+
+				Local ptfr:Int = pt + fr * 10
+
+				Local prev10:Int = pt + prevKeyR * 10
+				Local next10:Int = pt + nextKeyR * 10
+				Local curFrm:Float = Float(fr - prevKeyR)
+
+				partRot[ptfr] = 	Tween( partRot[prev10], 	partRot[next10], 	curFrm, prevKeyR, nextKeyR )
+
+			End
+
+		Next
+
+		For Local fr:Int = prevKeyS To nextKeyS
+
+			If keyFrameScl[fr] = False
+
+				Local ptfr:Int = pt + fr * 10
+
+				Local prev10:Int = pt + prevKeyS * 10
+				Local next10:Int = pt + nextKeyS * 10
+				Local curFrm:Float = Float(fr - prevKeyS)
+
+				partSclX[ptfr] = 	Tween( partSclX[prev10], 	partSclX[next10], 	curFrm, prevKeyS, nextKeyS )
+				partSclY[ptfr] = 	Tween( partSclY[prev10], 	partSclY[next10], 	curFrm, prevKeyS, nextKeyS )
+
+			End
+
+		Next
+
+		'#rem
+
+		partX[pt + 940 * 10] = partX[pt + prevKeyM * 10]
+		partY[pt + 940 * 10] = partY[pt + prevKeyM * 10]
+
+		partRot[pt + 940 * 10] = partRot[pt + prevKeyR * 10]
+
+		partSclX[pt + 940 * 10] = partSclX[pt + prevKeyS * 10]
+		partSclY[pt + 940 * 10] = partSclY[pt + prevKeyS * 10]
+
+		'#end
 
 	End
 
 End
 
-Function ThirdKey:Int()
+Const kfMOVE:Int = 0
+Const kfROT:Int = 1
+Const kfSCL:Int = 2
 
-	For Local fr:Int = nextKey + 1 To 940
-
-		If keyFrame[fr]
-
-			Return fr
-
-		End
-
-	End
-
-	Return 0
-
-End
-
-Function NextKey:Int()
+Function NextKey:Int(kfType:Int)
 
 	For Local fr:Int = curFrame To 940
 
-		If keyFrame[fr]
-
-			Return fr
-
-		End
+		If kfType = 0 And keyFrameMove[fr] Return fr
+		If kfType = 1 And keyFrameRot[fr] Return fr
+		If kfType = 2 And keyFrameScl[fr] Return fr
 
 	End
 
@@ -196,15 +224,13 @@ Function NextKey:Int()
 
 End
 
-Function PrevKey:Int()
+Function PrevKey:Int(kfType:Int)
 
 	For Local fr:Int = curFrame - 1 To 0 Step -1
 
-		If keyFrame[fr]
-
-			Return fr
-
-		End
+		If kfType = 0 And keyFrameMove[fr] Return fr
+		If kfType = 1 And keyFrameRot[fr] Return fr
+		If kfType = 2 And keyFrameScl[fr] Return fr
 
 	End
 

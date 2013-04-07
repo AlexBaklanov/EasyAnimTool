@@ -57,9 +57,9 @@ End
 Function CurTween:Float( b:Float, c:Float, t:Float, d:Float )
 
 	t /= d/2
-	If (t < 1) Return c/2*t*t + b
-	t -= 1
-	Return -c/2 * (t*(t-2) - 1) + b
+	If (t < 1) Return c/2*t*t*t + b
+	t -= 2
+	Return c/2*(t*t*t + 2) + b
 
 End
 
