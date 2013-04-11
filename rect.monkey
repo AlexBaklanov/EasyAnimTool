@@ -18,7 +18,7 @@ Function rectanglesHandle:Void()
 			Local pX:Int = rct.pivotX - rct.x
 			Local pY:Int = rct.pivotY - rct.y
 
-			Print "x" + rct.x/2 + "," + "y" + rct.y/2 + "," + "w" + (rct.x + rct.w)/2 + "," + "h" + (rct.y + rct.h)/2 + "," + "i" + pX/2 + "," + "j" + pY/2
+			Print "x" + rct.x/2 + "," + "y" + rct.y/2 + "," + "w" + rct.w/2 + "," + "h" + rct.h/2 + "," + "i" + pX/2 + "," + "j" + pY/2
 
 		End
 

@@ -44,6 +44,8 @@ Class imageEditClass
 		sclX = 1.0
 		sclY = 1.0
 
+		
+
 	End
 
 	'db    db d8888b. d8888b.  .d8b.  d888888b d88888b 

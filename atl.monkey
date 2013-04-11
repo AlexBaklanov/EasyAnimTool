@@ -51,9 +51,9 @@ Class atlasClass
 
 					Case "y" yStart[imgNum] = Int(rectValue[1..])*retinaValue
 
-					Case "w" w[imgNum] = Int(rectValue[1..])*retinaValue - xStart[imgNum]
+					Case "w" w[imgNum] = Int(rectValue[1..])*retinaValue
 
-					Case "h" h[imgNum] = Int(rectValue[1..])*retinaValue - yStart[imgNum]
+					Case "h" h[imgNum] = Int(rectValue[1..])*retinaValue
 
 					'pivot x'
 					Case "i" pivotX[imgNum] = Int(rectValue[1..])*retinaValue
