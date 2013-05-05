@@ -21,7 +21,7 @@ Class animationEditClass
 
 	Method Init:Void()
 
-		part.Load("anim/img.png")
+		part.Load("anim/img@2.png")
 
 		printBtn.Init("Print")
 		saveBtn.Init("Save")
@@ -93,10 +93,15 @@ Class animationEditClass
 
 			Local atF:Int = at + curFrame * 10
 
-			Local bzX:Float = partX[atF]
-			Local bzY:Float = partY[atF]
+			If at > 0
 
-			part.Draw(at, bzX, bzY, partRot[atF], partSclX[atF], partSclY[atF])
+				part.Draw(at, partX[atF] + partX[0 + curFrame * 10], partY[atF] + partY[0 + curFrame * 10], partRot[atF], partSclX[atF], partSclY[atF])
+
+			Else
+				
+				part.Draw(at, partX[atF], partY[atF], partRot[atF], partSclX[atF], partSclY[atF])
+
+			End
 
 			If at = curPart
 
@@ -113,14 +118,14 @@ Class animationEditClass
 
 			End
 
-			If (keyFrameMove[curFrame] Or keyFrameRot[curFrame] Or keyFrameScl[curFrame]) And playMode = False
+			If (keyFrameMove[at + curFrame * 10] Or keyFrameRot[at + curFrame * 10] Or keyFrameScl[at + curFrame * 10]) And playMode = False
 
 				SetAlpha(.3)
 
-				DrawOutline( 	part.x[at] - part.pivotX[at],
-								part.y[at] - part.pivotY[at],
-								part.x[at] - part.pivotX[at] + part.w[at] * partSclX[atF],
-								part.y[at] - part.pivotY[at] + part.h[at] * partSclY[atF] )
+				DrawOutline( 	part.x[at] - part.pivotX[at] - 1,
+								part.y[at] - part.pivotY[at] - 1,
+								part.x[at] - part.pivotX[at] + part.w[at] * partSclX[atF] + 1,
+								part.y[at] - part.pivotY[at] + part.h[at] * partSclY[atF] + 1)
 
 				SetAlpha(1)
 
@@ -133,12 +138,23 @@ Class animationEditClass
 		DrawLine( centerPoint, centerPoint - 50, centerPoint, centerPoint + 50 )
 		DrawLine( centerPoint - 50, centerPoint, centerPoint + 50, centerPoint )
 
+		White()
+
+		SetAlpha(.3)
+
+		DrawOutline( 	part.x[curPart] - part.pivotX[curPart] + 1,
+						part.y[curPart] - part.pivotY[curPart] + 1,
+						part.x[curPart] - part.pivotX[curPart] + part.w[curPart] * partSclX[curPart + curFrame * 10] - 1,
+						part.y[curPart] - part.pivotY[curPart] + part.h[curPart] * partSclY[curPart + curFrame * 10] - 1 )
+
+		SetAlpha(1)
+
 		DrawFrame()
 
 		printBtn.Draw(dw - printBtn.Width, 0)
 		saveBtn.Draw(dw - saveBtn.Width, printBtn.Height)
 
-		'DrawText( mainState[mainState.Length() - 100..], 100, 100 )
+		DrawText( partX[1 + curFrame * 10] - centerPoint, 100, 100 )
 		'DrawText( paramscnt, 200, 200 )
 
 	End
@@ -263,19 +279,19 @@ Global moveMode:Bool
 
 Function MoveHandle:Void()
 
-	If moveMode And pivotEditMode = False And keyFrameMove[curFrame] And TouchDown(0)
+	If moveMode And pivotEditMode = False And keyFrameMove[curPartFrame] And TouchDown(0)
 
 		partX[curPartFrame] = TouchX() - touchStartX + partXlast[curPartFrame]
 		partY[curPartFrame] = TouchY() - touchStartY + partYlast[curPartFrame]
 
-		If curPart = 0
-			For Local at:Int = 1 Until part.cnt
+		'If curPart = 0
+			'For Local at:Int = 1 Until part.cnt
 
-				partX[at + curFrame * 10] = TouchX() - touchStartX + partXlast[at + curFrame * 10]
-				partY[at + curFrame * 10] = TouchY() - touchStartY + partYlast[at + curFrame * 10]
+				'partX[at + curFrame * 10] = TouchX() - touchStartX + partXlast[at + curFrame * 10]
+				'partY[at + curFrame * 10] = TouchY() - touchStartY + partYlast[at + curFrame * 10]
 
-			End
-		End
+			'End
+		'End
 
 	End
 
@@ -292,7 +308,7 @@ Global partRotAddX:Int[10000], partRotAddY:Int[10000]
 
 Function RotateHandle:Void()
 
-	If rotateMode And pivotEditMode = False And keyFrameRot[curFrame] And TouchDown(0)
+	If rotateMode And pivotEditMode = False And keyFrameRot[curPartFrame] And TouchDown(0)
 
 		partRot[curPartFrame] = TouchX() - touchStartX + partRotLast[curPartFrame]
 
@@ -311,14 +327,14 @@ Global partSclLastX:Float[10000], partSclLastY:Float[10000]
 
 Function ScaleHandle:Void()
 
-	If scaleMode And pivotEditMode = False And keyFrameScl[curFrame] And TouchDown(0)
+	If scaleMode And pivotEditMode = False And keyFrameScl[curPartFrame] And TouchDown(0)
 
 		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
 		partSclY[curPartFrame] = Float(TouchY() - touchStartY + partSclLastY[curPartFrame]) / 100.0
 
 	End
 
-	If scaleMode2 And pivotEditMode = False And keyFrameScl[curFrame] And TouchDown(0)
+	If scaleMode2 And pivotEditMode = False And keyFrameScl[curPartFrame] And TouchDown(0)
 
 		partSclX[curPartFrame] = Float(TouchX() - touchStartX + partSclLastX[curPartFrame]) / 100.0
 		partSclY[curPartFrame] = partSclX[curPartFrame]
@@ -343,13 +359,21 @@ Function PrintResult:Void()
 			Local p:Int = cp
 			Local x:Int = partX[cp + fr * 10] - centerPoint
 			Local y:Int = partY[cp + fr * 10] - centerPoint
+
+			If p > 0
+
+				x += centerPoint
+				y += centerPoint
+
+			End
+
 			Local r:Int = partRot[cp + fr * 10]
 			Local sx:Int = Int( partSclX[cp + fr * 10] * 100 )
 			Local sy:Int = Int( partSclY[cp + fr * 10] * 100 )
 
-			If keyFrameMove[fr] Or keyFrameRot[fr] Or keyFrameScl[fr]
+			If keyFrameMove[cp + fr * 10] Or keyFrameRot[cp + fr * 10] Or keyFrameScl[cp + fr * 10]
 
-				Local ft:Int = Int(keyFrameMove[fr]) + Int(keyFrameRot[fr]) * 2 + Int(keyFrameScl[fr]) * 4
+				Local ft:Int = Int(keyFrameMove[cp + fr * 10]) + Int(keyFrameRot[cp + fr * 10]) * 2 + Int(keyFrameScl[cp + fr * 10]) * 4
 
 				Print "p" + p + ",f" + fr + ",m" + ft + ",x" + x/2 +  ",y" + y/2 +  ",r" + r +  ",s" + sx +  ",z" + sy
 

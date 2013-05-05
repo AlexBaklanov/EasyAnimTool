@@ -24,9 +24,9 @@ Class atlasClass
 			retinaValue = 2
 			correctPath = 6
 		End
-		If path.Contains("@2x")
+		If path.Contains("@2")
 			retinaValue = 2
-			correctPath = 7
+			correctPath = 6
 		End
 		If path.Contains("@2x@2x")
 			retinaValue = 4

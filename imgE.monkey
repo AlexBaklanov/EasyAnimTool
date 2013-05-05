@@ -29,7 +29,7 @@ Class imageEditClass
 	
 	Method Init:Void()
 
-		mainImage = LoadImage("anim/img.png")
+		mainImage = LoadImage("anim/img@2.png")
 		bgr1Img = LoadImage("bgr1.png")
 		bgr2Img = LoadImage("bgr2.png")
 

@@ -41,19 +41,19 @@ Function SaveGame:Void()
 
 	Next
 
-	For Local pl:Int = 0 Until 1000
+	For Local pl:Int = 0 Until 10000
 
 		addParam( Int(keyFrameMove[pl]) )
 
 	Next
 
-	For Local pl:Int = 0 Until 1000
+	For Local pl:Int = 0 Until 10000
 
 		addParam( Int(keyFrameRot[pl]) )
 
 	Next
 
-	For Local pl:Int = 0 Until 1000
+	For Local pl:Int = 0 Until 10000
 
 		addParam( Int(keyFrameScl[pl]) )
 
@@ -113,24 +113,24 @@ Function LoadGame:Void()
 
 		Next
 
-		For Local pl:Int = 50000 Until 51000
+		For Local pl:Int = 50000 Until 60000
 
 			keyFrameMove[pl - 50000] = False
 			If paramLine[pl] = 1 keyFrameMove[pl - 50000] = True
 
 		Next
 
-		For Local pl:Int = 51000 Until 52000
+		For Local pl:Int = 60000 Until 70000
 
-			keyFrameRot[pl - 51000] = False
-			If paramLine[pl] = 1 keyFrameRot[pl - 51000] = True
+			keyFrameRot[pl - 60000] = False
+			If paramLine[pl] = 1 keyFrameRot[pl - 60000] = True
 
 		Next
 
-		For Local pl:Int = 52000 Until 53000
+		For Local pl:Int = 70000 Until 80000
 
-			keyFrameScl[pl - 52000] = False
-			If paramLine[pl] = 1 keyFrameScl[pl - 52000] = True
+			keyFrameScl[pl - 70000] = False
+			If paramLine[pl] = 1 keyFrameScl[pl - 70000] = True
 
 		Next
 		
@@ -175,7 +175,7 @@ Function ResetGame:Void()
 
 	Next
 
-	For Local pl:Int = 50000 Until 51000
+	For Local pl:Int = 50000 Until 60000
 
 		keyFrameMove[pl - 50000] = 			False
 		keyFrameRot[pl - 50000] = 			False
@@ -183,12 +183,16 @@ Function ResetGame:Void()
 
 	Next
 
-	keyFrameMove[0] = True
-	keyFrameMove[940] = True
-	keyFrameRot[0] = True
-	keyFrameRot[940] = True
-	keyFrameScl[0] = True
-	keyFrameScl[940] = True
+	For Local pt:Int = 0 Until part.cnt
+
+		keyFrameMove[pt + 0] = True
+		keyFrameMove[pt + 9400] = True
+		keyFrameRot[pt + 0] = True
+		keyFrameRot[pt + 9400] = True
+		keyFrameScl[pt + 0] = True
+		keyFrameScl[pt + 9400] = True
+
+	Next
 
 End
 
